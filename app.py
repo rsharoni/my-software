@@ -2,6 +2,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
+def click():
+    print("Click")
+    return "Click"
+
 @app.route("/")
 def home():
     return "Hello from Python!"
